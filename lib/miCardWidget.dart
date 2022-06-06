@@ -25,41 +25,46 @@ class MiCardWidget extends StatelessWidget {
           letterSpacing: 2.0,
         ),
       ),
-      Container(
+      Card(
         margin: EdgeInsets.symmetric(horizontal: 60.0, vertical: 10),
-        padding: EdgeInsets.all(10.0),
         color: Colors.white,
-        child: Row(
-          children: [
-            Icon(Icons.phone_android_rounded,
-                size: 25, color: Colors.teal.shade900),
-            SizedBox(width: 20),
-            Text(
-              '96000 34828',
-              style: TextStyle(
-                  color: Colors.teal[900],
-                  fontFamily: 'SourceSansPro',
-                  fontSize: 20.0),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Row(
+            children: [
+              Icon(Icons.phone_android_rounded,
+                  size: 25, color: Colors.teal.shade900),
+              SizedBox(width: 20),
+              Text(
+                '96000 34828',
+                style: TextStyle(
+                    color: Colors.teal[900],
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 20.0),
+              ),
+            ],
+          ),
         ),
       ),
-      Container(
+      Card(
         margin: EdgeInsets.symmetric(horizontal: 60.0, vertical: 10),
-        padding: EdgeInsets.all(10.0),
+        // padding: EdgeInsets.all(10.0),
         color: Colors.white,
-        child: Row(
-          children: [
-            Icon(Icons.email, size: 25, color: Colors.teal.shade900),
-            SizedBox(width: 20),
-            Text(
-              'tdrajesh@hotmail.com',
-              style: TextStyle(
-                  color: Colors.teal[900],
-                  fontFamily: 'SourceSansPro',
-                  fontSize: 20.0),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Row(
+            children: [
+              Icon(Icons.email, size: 25, color: Colors.teal.shade900),
+              SizedBox(width: 20),
+              Text(
+                'tdrajesh@hotmail.com',
+                style: TextStyle(
+                    color: Colors.teal[900],
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 20.0),
+              ),
+            ],
+          ),
         ),
       ),
     ]);
